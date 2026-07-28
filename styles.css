@@ -84,9 +84,9 @@ a { text-decoration: none; }
 
 .header-call {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: var(--ink);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--green-deep);
   letter-spacing: 0.01em;
   transition: color 0.15s ease;
 }
@@ -165,9 +165,7 @@ a { text-decoration: none; }
   border-radius: 8px;
   box-shadow: var(--shadow);
   transition: transform 0.15s ease, background 0.15s ease;
-  
 }
-
 .hero-call-btn:hover {
   background: var(--green-deep);
   transform: translateY(-2px);
@@ -182,21 +180,32 @@ a { text-decoration: none; }
 }
 
 .hero-call-label {
-  font-size: 0.8rem;
-  font-weight: 500;
-  opacity: 0.9;
+  font-size: 1.05rem;
+  font-weight: 600;
+  opacity: 0.95;
 }
 .hero-call-number {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 800;
   color: var(--gold);
   white-space: nowrap;
-  margin-top: 4px;
+  margin-top: 6px;
+}
+
+@media (max-width: 860px) {
+  .hero-call-btn {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 480px) {
   .hero-call-number {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
+  }
+  .hero-call-label {
+    font-size: 0.95rem;
   }
 }
 .phone-icon { font-size: 1.1rem; }
