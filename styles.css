@@ -165,8 +165,7 @@ a { text-decoration: none; }
   border-radius: 8px;
   box-shadow: var(--shadow);
   transition: transform 0.15s ease, background 0.15s ease;
-  white-space: nowrap;
-  max-width: 100%;
+  
 }
 
 .hero-call-btn:hover {
@@ -174,11 +173,30 @@ a { text-decoration: none; }
   transform: translateY(-2px);
 }
 
-.hero-call-btn strong {
-  color: var(--gold);
-  font-weight: 700;
+.hero-call-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
 }
 
+.hero-call-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.hero-call-number {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .hero-call-number {
+    font-size: 1.15rem;
+  }
+}
 .phone-icon { font-size: 1.1rem; }
 
 /* ============ VARIETIES ============ */
